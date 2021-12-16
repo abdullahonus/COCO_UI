@@ -55,10 +55,12 @@ class _StoreMainPageState extends State<StoreMainPage> {
                             color: Colors.black,
                             height: 35,
                             child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
-                                const Icon(Icons.mail_outline_sharp,
-                                    color: Colors.white, size: 35),
+                                Container(
+                                  margin: EdgeInsets.fromLTRB(33, 0, 5, 0),
+                                  child: const Icon(Icons.mail_outline_sharp,
+                                      color: Colors.white, size: 35),
+                                ),
                                 Text(
                                   "Countrolfour@gmail.com",
                                   style: constants.ao,
@@ -66,21 +68,85 @@ class _StoreMainPageState extends State<StoreMainPage> {
                               ],
                             ),
                           ),
+                          Container(
+                            margin: EdgeInsets.fromLTRB(24, 30, 0, 0),
+                            child: TextButton.icon(
+                              onPressed: () {
+                                // Respond to button press
+                              },
+                              icon: Icon(
+                                Icons.person,
+                                size: 35,
+                                color: Colors.black,
+                              ),
+                              label: Text(
+                                "KULLANICI BİLGİLERİM",
+                                style: constants.oa,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.fromLTRB(24, 10, 0, 0),
+                            child: TextButton.icon(
+                              onPressed: () {
+                                // Respond to button press
+                              },
+                              icon: Icon(
+                                Icons.cases_outlined,
+                                size: 35,
+                                color: Colors.black,
+                              ),
+                              label: Text(
+                                "SİPARİŞLERİM",
+                                style: constants.oa,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.fromLTRB(24, 10, 0, 0),
+                            child: TextButton.icon(
+                              onPressed: () {
+                                // Respond to button press
+                              },
+                              icon: Icon(
+                                Icons.location_on_outlined,
+                                size: 35,
+                                color: Colors.black,
+                              ),
+                              label: Text(
+                                "ADRES BİLGİLERİM ",
+                                style: constants.oa,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.fromLTRB(24, 10, 0, 0),
+                            child: TextButton.icon(
+                              onPressed: () {
+                                // Respond to button press
+                              },
+                              icon: Icon(
+                                Icons.settings,
+                                size: 35,
+                                color: Colors.black,
+                              ),
+                              label: Text(
+                                "AYARLAR",
+                                style: constants.oa,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 45,
+                          ),
                           Row(
                             children: [
-                              const SizedBox(width: 30, height: 150),
-                              const Icon(
-                                Icons.home,
-                                size: 35,
-                                
-                              ),
-                              const SizedBox(width: 30, height: 60),
-                              Text(
-                                "HOME",
-                                style: constants.oa,
-                              )
+                              TextButton(
+                                  onPressed: () {}, child: constants.cikis),
+                              TextButton(
+                                  onPressed: () {}, child: constants.destek)
                             ],
-                          )
+                          ),
                         ],
                       ),
                     ],
@@ -90,6 +156,30 @@ class _StoreMainPageState extends State<StoreMainPage> {
               ),
             ),
             appBar: AppBar(
+              actions: [
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 12, 0, 0),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.shopping_cart,
+                            size: 30,
+                          ),
+                          Container(
+                            margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                            child: Icon(
+                              Icons.favorite,
+                              size: 30,
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              ],
               backgroundColor: Colors.black,
               title: const Text(
                 "COCO",
@@ -99,6 +189,7 @@ class _StoreMainPageState extends State<StoreMainPage> {
                     fontWeight: FontWeight.bold,
                     fontSize: 30),
               ),
+              leadingWidth: 35,
             ),
             body: LayoutBuilder(builder:
                 (BuildContext contex, BoxConstraints viewportConstraints) {
