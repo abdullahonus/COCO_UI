@@ -7,6 +7,11 @@ class Constants {
     fontFamily: "monster",
     color: Colors.white,
   ));
+  static TextStyle detail = (const TextStyle(
+      fontFamily: "monster",
+      color: Colors.black,
+      fontSize: 20,
+      fontWeight: FontWeight.bold));
   static TextStyle oa = (const TextStyle(
       fontFamily: "monster", color: Colors.black, fontWeight: FontWeight.bold));
   static Text destek = (const Text(
@@ -18,5 +23,7 @@ class Constants {
     style: TextStyle(color: Colors.blue, fontFamily: "monster"),
   ));
   static TextStyle kadin = (const TextStyle(
-      fontFamily: "monster", color: Colors.black, fontSize: 10));
+      fontFamily: "monster", color: Colors.black, fontSize: 14));
+  static TextStyle kadinBuyuk = (const TextStyle(
+      fontFamily: "monster", color: Colors.black, fontSize: 14));
 }
