@@ -63,7 +63,7 @@ class _StoreMainPageState extends State<StoreMainPage> {
                                 ),
                                 Text(
                                   "Countrolfour@gmail.com",
-                                  style: constants.ao,
+                                  style: Constants.ao,
                                 )
                               ],
                             ),
@@ -81,7 +81,7 @@ class _StoreMainPageState extends State<StoreMainPage> {
                               ),
                               label: Text(
                                 "KULLANICI BİLGİLERİM",
-                                style: constants.oa,
+                                style: Constants.oa,
                               ),
                             ),
                           ),
@@ -98,7 +98,7 @@ class _StoreMainPageState extends State<StoreMainPage> {
                               ),
                               label: Text(
                                 "SİPARİŞLERİM",
-                                style: constants.oa,
+                                style: Constants.oa,
                               ),
                             ),
                           ),
@@ -115,7 +115,7 @@ class _StoreMainPageState extends State<StoreMainPage> {
                               ),
                               label: Text(
                                 "ADRES BİLGİLERİM ",
-                                style: constants.oa,
+                                style: Constants.oa,
                               ),
                             ),
                           ),
@@ -132,7 +132,7 @@ class _StoreMainPageState extends State<StoreMainPage> {
                               ),
                               label: Text(
                                 "AYARLAR",
-                                style: constants.oa,
+                                style: Constants.oa,
                               ),
                             ),
                           ),
@@ -142,9 +142,9 @@ class _StoreMainPageState extends State<StoreMainPage> {
                           Row(
                             children: [
                               TextButton(
-                                  onPressed: () {}, child: constants.cikis),
+                                  onPressed: () {}, child: Constants.cikis),
                               TextButton(
-                                  onPressed: () {}, child: constants.destek)
+                                  onPressed: () {}, child: Constants.destek)
                             ],
                           ),
                         ],

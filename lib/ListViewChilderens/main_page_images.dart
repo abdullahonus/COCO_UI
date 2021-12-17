@@ -1,12 +1,78 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:store_ui/const/constant.dart';
 
 var children2 = [
-
-
-
-  
+  Column(
+    children: [
+      Container(
+        margin: EdgeInsets.fromLTRB(20, 30, 0, 0),
+        width: 150,
+        height: 200,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+            image: DecorationImage(
+                image: AssetImage(
+                  "images/1.webp",
+                ),
+                fit: BoxFit.fill)),
+        child: Container(
+            height: 50,
+            width: 40,
+            margin: EdgeInsets.fromLTRB(
+              0,
+              0,
+              130,
+              180,
+            ),
+            child: InkWell(
+              child: Icon(Icons.shopping_cart_sharp, size: 35),
+              onTap: () {},
+            )),
+      ),
+      Container(
+        margin: EdgeInsets.fromLTRB(20, 0, 0, 0),
+        child: Text(
+          "YÜN VE ALPAKA KARIŞIMLI \nTRİKO ELBİSE\n 499 TL",
+          textAlign: TextAlign.center,
+          style: Constants.kadin,
+        ),
+      ),
+      Container(
+        margin: EdgeInsets.fromLTRB(120, 40, 0, 0),
+        width: 150,
+        height: 200,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+            image: DecorationImage(
+                image: AssetImage(
+                  "images/2.webp",
+                ),
+                fit: BoxFit.fill)),
+        child: Container(
+          margin: EdgeInsets.fromLTRB(
+            0,
+            0,
+            130,
+            180,
+          ),
+          child: InkWell(
+            child: Icon(Icons.shopping_cart_sharp, size: 35),
+            onTap: () {},
+          ),
+        ),
+      ),
+      Container(
+        margin: EdgeInsets.fromLTRB(120, 0, 0, 0),
+        child: Text(
+          "METALİK İPLİKLİ ÖRGÜ ELBİSE \n 599 TL",
+          textAlign: TextAlign.center,
+          style: Constants.kadin,
+        ),
+      ),
+    ],
+  )
 ];
 
 /* Column(

@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class constants {
+class Constants {
   static TextStyle ao = (const TextStyle(
     fontFamily: "monster",
     color: Colors.white,
@@ -17,4 +17,6 @@ class constants {
     "Çıkış",
     style: TextStyle(color: Colors.blue, fontFamily: "monster"),
   ));
+  static TextStyle kadin = (const TextStyle(
+      fontFamily: "monster", color: Colors.black, fontSize: 10));
 }
