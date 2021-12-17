@@ -7,7 +7,7 @@ var children2 = [
   Column(
     children: [
       Container(
-        margin: EdgeInsets.fromLTRB(20, 30, 0, 0),
+        margin: EdgeInsets.fromLTRB(20, 20, 0, 0),
         width: 150,
         height: 200,
         decoration: BoxDecoration(
@@ -27,7 +27,7 @@ var children2 = [
               180,
             ),
             child: InkWell(
-              child: Icon(Icons.shopping_cart_sharp, size: 35),
+              child: Icon(Icons.remove_red_eye, size: 35),
               onTap: () {},
             )),
       ),
@@ -40,7 +40,7 @@ var children2 = [
         ),
       ),
       Container(
-        margin: EdgeInsets.fromLTRB(120, 40, 0, 0),
+        margin: EdgeInsets.fromLTRB(120, 30, 0, 0),
         width: 150,
         height: 200,
         decoration: BoxDecoration(
@@ -58,7 +58,7 @@ var children2 = [
             180,
           ),
           child: InkWell(
-            child: Icon(Icons.shopping_cart_sharp, size: 35),
+            child: Icon(Icons.remove_red_eye, size: 35),
             onTap: () {},
           ),
         ),

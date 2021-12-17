@@ -1,6 +1,3 @@
-// ignore_for_file: deprecated_member_use, prefer_const_constructors
-
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:store_ui/ListViewChilderens/main_page_images.dart';
 import 'package:store_ui/const/constant.dart';
@@ -31,7 +28,7 @@ class _StoreMainPageState extends State<StoreMainPage> {
                         height: 150,
                         width: 10,
                         child: CircleAvatar(
-                          backgroundImage: AssetImage("images/coco.png"),
+                          backgroundImage: const AssetImage("images/coco.png"),
                           backgroundColor: Colors.transparent,
                           maxRadius: 350,
                           child: Container(
@@ -57,7 +54,8 @@ class _StoreMainPageState extends State<StoreMainPage> {
                             child: Row(
                               children: [
                                 Container(
-                                  margin: EdgeInsets.fromLTRB(33, 0, 5, 0),
+                                  margin:
+                                      const EdgeInsets.fromLTRB(33, 0, 5, 0),
                                   child: const Icon(Icons.mail_outline_sharp,
                                       color: Colors.white, size: 35),
                                 ),
@@ -69,12 +67,12 @@ class _StoreMainPageState extends State<StoreMainPage> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(24, 30, 0, 0),
+                            margin: const EdgeInsets.fromLTRB(24, 30, 0, 0),
                             child: TextButton.icon(
                               onPressed: () {
                                 // Respond to button press
                               },
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.person,
                                 size: 35,
                                 color: Colors.black,
@@ -86,12 +84,12 @@ class _StoreMainPageState extends State<StoreMainPage> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(24, 10, 0, 0),
+                            margin: const EdgeInsets.fromLTRB(24, 10, 0, 0),
                             child: TextButton.icon(
                               onPressed: () {
                                 // Respond to button press
                               },
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.cases_outlined,
                                 size: 35,
                                 color: Colors.black,
@@ -103,12 +101,12 @@ class _StoreMainPageState extends State<StoreMainPage> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(24, 10, 0, 0),
+                            margin: const EdgeInsets.fromLTRB(24, 10, 0, 0),
                             child: TextButton.icon(
                               onPressed: () {
                                 // Respond to button press
                               },
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.location_on_outlined,
                                 size: 35,
                                 color: Colors.black,
@@ -120,12 +118,12 @@ class _StoreMainPageState extends State<StoreMainPage> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(24, 10, 0, 0),
+                            margin: const EdgeInsets.fromLTRB(24, 10, 0, 0),
                             child: TextButton.icon(
                               onPressed: () {
                                 // Respond to button press
                               },
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.settings,
                                 size: 35,
                                 color: Colors.black,
@@ -136,7 +134,7 @@ class _StoreMainPageState extends State<StoreMainPage> {
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 45,
                           ),
                           Row(
@@ -158,18 +156,18 @@ class _StoreMainPageState extends State<StoreMainPage> {
             appBar: AppBar(
               actions: [
                 Container(
-                  margin: EdgeInsets.fromLTRB(0, 12, 0, 0),
+                  margin: const EdgeInsets.fromLTRB(0, 12, 0, 0),
                   child: Column(
                     children: [
                       Row(
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.shopping_cart,
                             size: 30,
                           ),
                           Container(
-                            margin: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                            child: Icon(
+                            margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                            child: const Icon(
                               Icons.favorite,
                               size: 30,
                             ),
